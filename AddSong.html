@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Songs</title>
+</head>
+<body>
+<form method = "get" action = "Songs.php">
+<table>
+   <tr><td>Title</td><td><input type="text" name="title" /></td></tr>
+   <tr><td>Artist</td><td><input type="text" name="artist" /></td></tr>
+   <tr><td>Genre</td><td>
+	<select name="genre">
+		<option value="Pop">Pop</option>
+		<option value="Alternative/Indie">Alternative/Indie</option>
+		<option value="Rock">Rock</option>
+		<option value="Rap">Rap</option>
+		<option value="R&B">R&B</option>
+		<option value="Other">Other</option>
+	</select></td></tr>
+	<tr><td>Release Year</td><td><input type="number" min = 1500 max = 2019 value=1 name="release_date" />
+</table>
+<input type="submit" name = "command" value = "Cancel" />
+<input type="submit" name = "command" value = "Add" />
+</form>
+</body>
+</html>
